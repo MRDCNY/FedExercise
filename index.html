@@ -1,0 +1,141 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" type="text/css" href = "myCss.css">
+<title> Travel & Tours Co.</title>
+</head>
+
+
+<body>
+
+<div class = "bgimg-1">
+<div class="caption">
+<span class = "border">Welcome to</span>
+<br />
+<span class = "border"> Travel & Tours Co.</span></div>
+</div>
+</div>
+
+
+<h2> Packages & Deals </h2>
+<br />
+<h4>Package 1 </h4>
+<p>Lorem Ipsum is simply dummy text of the printing
+ and typesetting industry. Lorem Ipsum has been the industry's 
+ standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+ and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+ electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+ containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum...
+</p>
+<div class="container">
+
+  <img src="images/IMG1.jpg" alt="Avatar" class="image" /> 
+  <div class="overlay">
+    <div class="textImage">Location: XXXX</div>
+  </div>
+</div>
+<br />
+ <a href="destination1.html">
+ 
+<button class="button"><span>Read More </span></button> </a>
+<br /> 
+<h4>Package 2 </h4>
+<p>It is a long established fact that a reader will be distracted by the 
+readable content of a page when looking at its layout. The point of using Lorem Ipsum is that 
+it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it 
+look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, 
+and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, 
+sometimes by accident, sometimes on purpose (injected humour and the like)...
+</p>
+<div class="container">
+
+  <img src="images/IMG2.jpg" alt="Avatar" class="image" />
+  <div class="overlay">
+    
+    <div class="textImage">Location: XXXX</div>
+  </div>
+</div>
+<br />
+<a href="destination2.html">
+<button class="button"><span>Read More </span></button> </a>
+<br /> 
+
+
+<h4>Package 3 </h4>
+<p>There are many variations of passages of Lorem Ipsum available, 
+but the majority have suffered alteration in some form, by injected humour, or randomised 
+words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, 
+you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+ generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the
+ Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate 
+ Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc....
+</p>
+<div class="container">
+  <img src="images/IMG3.jpg" alt="Avatar" class="image" />
+  <div class="overlay">
+   
+    <div class="textImage">Location: XXXX</div> 
+  </div>
+</div>
+<br />
+
+ <a href="destination3.html">
+<button class="button"><span>Read More </span></button></a>
+<br />
+<hr>
+
+<p><h4>For more information, please <button id = "myBtn" class="buttonContact"><span>Contact&nbsp;Us!</span></button> </h4>
+</p>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+	
+<div class="containerForm">
+  <form>
+
+    <label for="fname">Name:</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Email:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your e-mail address..">
+
+    <label for="country">Questions & Inquiries</label>
+    <textarea id="subject" name="subject" placeholder="Write your questions & inquiries.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" onclick = "messagePop();" >
+
+  </form>
+</div>
+  </div>
+
+</div>
+<br />
+
+
+<script>
+function messagePop() {
+window.alert("Request Submitted!");
+}
+
+
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
